@@ -56,3 +56,21 @@ def harita_cizim():
                 hucre. left = hucre . width * j
                 hucre. top = hucre. height * i
                 hucre. draw()
+
+def on_key_down(key):
+    if keyboard.left:
+        karakter.image = 'sol'
+        karakter.x -= hucre.width
+
+    elif keyboard.right:
+        karakter.image = 'karakter'
+        karakter.x += hucre.width
+
+    elif keyboard.up:
+        karakter.y -= hucre.height
+
+    elif keyboard.down:
+        karakter.y += hucre.height
+        
+
+        
